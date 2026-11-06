@@ -1,0 +1,42 @@
+{
+  "name": "@checkout-uz/checkout-sdk-ts",
+  "version": "1.0.0",
+  "description": "Official TypeScript client for the CHECKOUT.UZ merchant API (v1 and v2)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "checkout.uz",
+    "payment",
+    "payment-gateway",
+    "uzbekistan",
+    "payme",
+    "click",
+    "typescript"
+  ],
+  "homepage": "https://checkout.uz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/checkout-uz/checkout-sdk-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/checkout-uz/checkout-sdk-ts/issues"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist-tests",
+    "pretest": "tsc -p tsconfig.tests.json"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}
